@@ -1,0 +1,71 @@
+<div class="calculator">
+  <input type="text" class="calculator-top" [value]="displayValue" disabled />
+
+  <div class="calculator-bottom">
+    <button type="button" class="button-ac" (click)="Clear()" value="all-clear">
+      AC
+    </button>
+
+    <button type="button" value="Sci">Sci</button>
+
+    <button
+      type="button"
+      class="operator"
+      (click)="InputOperator('+')"
+      value="+"
+    >
+      +
+    </button>
+
+    <button type="button" (click)="InputNumber('7')" value="7">7</button>
+    <button type="button" (click)="InputNumber('8')" value="8">8</button>
+    <button type="button" (click)="InputNumber('9')" value="9">9</button>
+
+    <button
+      type="button"
+      class="operator"
+      (click)="InputOperator('-')"
+      value="-"
+    >
+      -
+    </button>
+
+    <button type="button" (click)="InputNumber('4')" value="4">4</button>
+    <button type="button" (click)="InputNumber('5')" value="5">5</button>
+    <button type="button" (click)="InputNumber('6')" value="6">6</button>
+
+    <button
+      type="button"
+      class="operator"
+      (click)="InputOperator('*')"
+      value="*"
+    >
+      &times;
+    </button>
+
+    <button type="button" (click)="InputNumber('1')" value="1">1</button>
+    <button type="button" (click)="InputNumber('2')" value="2">2</button>
+    <button type="button" (click)="InputNumber('3')" value="3">3</button>
+
+    <button
+      type="button"
+      class="operator"
+      (click)="InputOperator('*')"
+      value="/"
+    >
+      &divide;
+    </button>
+
+    <button type="button" class="decimal" value=".">.</button>
+    <button type="button" (click)="InputNumber('0')" value="0">0</button>
+
+    <button
+      type="button"
+      class="button-equal"
+      (click)="InputOperator('=')"
+      value="="
+    >
+      =
+    </button>
+  </div>
+</div>
